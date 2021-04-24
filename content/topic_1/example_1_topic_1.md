@@ -4,8 +4,8 @@ draft: true
 hideLastModified: true
 summary: This summary is multiline
 tags:
-- custom_summary
-- code
+- resumo_customizado
+- código
 title: O tópico 1 é muito legal (de novo)!
 ---
 

@@ -6,5 +6,6 @@ showInMenu: true
 title: Sobre
 ---
 
-Here the important information about yourself should go.
+
+O site surgiu com a intenção de popularizar a estatística e sua aplicação....
 
