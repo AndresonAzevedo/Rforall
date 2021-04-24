@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-en">
-  <head>
-	<meta name="generator" content="Hugo 0.82.0" /><link rel="icon" href="/favicon_main.svg"><meta charset="utf-8" />
+  <head><link rel="icon" href="/favicon_main.svg"><meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-<meta http-equiv="x-ua-compatible" content="ie=edge" /><title>Personal website and blog</title>
+<meta http-equiv="x-ua-compatible" content="ie=edge" /><title>Personal website and blog - regressão</title>
 
     
 <link href="https://fonts.googleapis.com/css?family=Open&#43;Sans" rel="stylesheet">
@@ -21,7 +20,7 @@
 
     <div id="preloader">
       <div id="status"></div>
-    </div><section class="hero is-fullheight is-default is-bold"><nav class="navbar is-fresh is-transparent no-shadow" role="navigation" aria-label="main navigation">
+    </div><nav class="navbar is-fresh is-transparent no-shadow" role="navigation" aria-label="main navigation">
   <div class="container">
     <div class="navbar-brand">
 
@@ -59,7 +58,7 @@
     </div><div id="navbar-menu" class="navbar-menu is-static">
       
       <div class="navbar-end">
-        
+        <a href="/post/" class="navbar-item is-secondary">Posts</a>
         
         
         <div class="navbar-item">
@@ -73,7 +72,7 @@
                     padding-left: 0.625em  ;
                     ">
 
-                <span>PT</span>
+                <span>EN</span>
               </button>
             </div>
             <div class="dropdown-menu" id="dropdown-menu" role="menu" style="min-width: 0em;">
@@ -86,17 +85,16 @@
                   
                 
                 
-                  
-                  <a href="https://faceafacecomaestatistica/" class="dropdown-item" 
-                      style="text-align: center; color:#999; padding-right: 0.82em !important ; padding-left: 0.82em !important;">
-                    EN
-                  </a>
-                
-                
-                  
                 
                   
                     
+                    <a href="https://faceafacecomaestatistica/pt/" class="dropdown-item" 
+                        style="text-align: center; color:#999; padding-right: 0.82em !important ; padding-left: 0.82em !important;">
+                        PT
+                    </a>
+                    
+                  
+                
                   
                 
               </div>
@@ -144,7 +142,7 @@
           </div>
         </a>
       </div><div id="cloned-navbar-menu" class="navbar-menu is-static">
-        <div class="navbar-end">
+        <div class="navbar-end"><a href="/post/" class="navbar-item is-secondary">Posts</a>
           
           
           <div class="navbar-item">
@@ -158,7 +156,7 @@
                       padding-left: 0.625em  ;
                       ">
   
-                  <span>PT</span>
+                  <span>EN</span>
                 </button>
               </div>
               <div class="dropdown-menu" id="dropdown-menu" role="menu" style="min-width: 0em;">
@@ -171,17 +169,16 @@
                     
                   
                   
-                    
-                    <a href="https://faceafacecomaestatistica/" class="dropdown-item" 
-                        style="text-align: center; color:#999; padding-right: 0.82em !important ; padding-left: 0.82em !important;">
-                      EN
-                    </a>
-                  
-                  
-                    
                   
                     
                       
+                      <a href="https://faceafacecomaestatistica/pt/" class="dropdown-item" 
+                          style="text-align: center; color:#999; padding-right: 0.82em !important ; padding-left: 0.82em !important;">
+                          PT
+                      </a>
+                      
+                    
+                  
                     
                     
                 </div>
@@ -194,19 +191,43 @@
       </div>
     </div>
   </nav>
-<div class="hero-body">
+<section class="section is-medium">
         <div class="container">
-            <div class="columns is-vcentered">
-            <div class="column is-5 is-offset-1 landing-caption">
-                <h1 class="title is-1 is-bold is-spaced">Face a Face com a Estatística</h1>
-            </div>
-            <div class="column is-5 is-offset-1">
-                <figure class="image"><img src="/images/avataaars.png" 
-                     style="width:500px" alt="Myself">
-                </figure>
-            </div>
-            </div>
-        </div>
+          
+            
+              <h1 class="title section-title">regressão</h1>
+              <h5 class="subtitle is-5 is-muted"></h5>
+              <div class="divider"></div>        
+              <div class="section is-small">
+                <div class="columns">
+                    <div class="column is-4"><div class="box">
+      <figure class="image is-3by2">
+        <a href="/post/2020-12-01-r-rmarkdown/">
+        
+          <img src="/images/default_summary_hu2be732aee21a2469ead3fe1f2df8caca_2088687_600x0_resize_q75_box.jpg" alt="">
+        
+        </a>
+      </figure>
+      <h3 class="title is-5 refresh-summary-title">
+        Olá R Markdown
+      </h3>
+      <p class="refresh-summary">R MarkdownThis is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
+You can embed an R code chunk like this:
+summary(cars)## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.98 ## 3rd Qu.:19.0 3rd Qu.: 56.00 ## Max. :25.0 Max. :120.00fit &amp;lt;- lm(dist ~ speed, data = cars)fit## ## Call:## lm(formula = dist ~ speed, data = cars)## ## Coefficients:## (Intercept) speed ## -17.579 3.932Including PlotsYou can also embed plots. See Figure 1 for example:
+par(mar = c(0, 1, 0, 1))pie(c(280, 60, 20),c(&amp;#39;Sky&amp;#39;, &amp;#39;Sunny side of pyramid&amp;#39;, &amp;#39;Shady side of pyramid&amp;#39;),col = c(&amp;#39;#0292D8&amp;#39;, &amp;#39;#F7EA39&amp;#39;, &amp;#39;#C4B632&amp;#39;),init.angle = -50, border = NA)Figure 1: A fancy pie chart.</p> 
+      <div class="action has-text-right">
+        <a href="/post/2020-12-01-r-rmarkdown/" class="button is-primary">
+                Read more
+            </a>
+      </div>
+    </div>
+  </div>
+
+                  </div>
+                
+              </div>
+            
+          
         </div>
     </section><footer class="footer footer-dark">
   <div class="container">
@@ -222,7 +243,7 @@
               <h3>Website</h3>
           </div>
           <ul class="link-list"><li></li>
-            <li><a href="/pt/tags/">
+            <li><a href="/tags/">
                 <span class="icon"><i class="fa fa-tag"></i></span> 
                 All Tags
               </a></li>
@@ -276,7 +297,7 @@
             <li>
               <a>
                 <span class="icon"><i class="fa fa-copyright"></i></span>
-                Face a Face com a Estatística - 2021
+                Face to Face with Statistics - 2021
               </a>
             </li>
           </ul>
@@ -296,7 +317,7 @@
   </div>
   <div class="inner">
     <ul class="sidebar-menu">
-      <li class="no-children"><a href="/pt/tags/"><div class="columns">
+      <li class="no-children"><a href="/tags/"><div class="columns">
               <table width="100%">  
                 <tr>
                   <td class="">
@@ -309,7 +330,61 @@
                 </tr>
               </table>
             </div>
-          </a></ul>
+          </a>
+      <li class="no-children">
+          <a href="/tags/gr%c3%a1ficos">
+            <div class="columns">
+              
+              <table width="100%">  
+                  <tr>
+                    <td class=""><span class="icon"><i class="fa fa-cube"></i></span>gráficos</td>
+                    <td class="has-text-right" >
+                        <div class="tag-number">1</div>
+                      
+                    </td>
+                    
+                  </tr>
+              </table>
+              
+            </div>
+          </a>
+      </li>
+      <li class="no-children">
+          <a href="/tags/r-markdown">
+            <div class="columns">
+              
+              <table width="100%">  
+                  <tr>
+                    <td class=""><span class="icon"><i class="fa fa-cube"></i></span>R Markdown</td>
+                    <td class="has-text-right" >
+                        <div class="tag-number">1</div>
+                      
+                    </td>
+                    
+                  </tr>
+              </table>
+              
+            </div>
+          </a>
+      </li>
+      <li class="no-children">
+          <a href="/tags/regress%c3%a3o">
+            <div class="columns">
+              
+              <table width="100%">  
+                  <tr>
+                    <td class=""><span class="icon"><i class="fa fa-cube"></i></span>regressão</td>
+                    <td class="has-text-right" >
+                        <div class="tag-number">1</div>
+                      
+                    </td>
+                    
+                  </tr>
+              </table>
+              
+            </div>
+          </a>
+      </li></ul>
   </div>
 </div>
 <script src="/js/jquery-2.2.4.893e90f6230962e42231635df650f20544ad22affc3ee396df768eaa6bc5a6a2.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="></script>
