@@ -6,5 +6,5 @@ showInMenu: true
 title: Sobre
 ---
 
-Este Site tem como principal objetivo tornar a Estatística mais Acessível.
+Here the important information about yourself should go.
 
