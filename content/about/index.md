@@ -6,5 +6,6 @@ showInMenu: true
 title: Sobre
 ---
 
-Este Site tem como principal objetivo tornar a Estatística mais Acessível.
+
+O site surgiu com a intenção de popularizar a estatística e sua aplicação....
 

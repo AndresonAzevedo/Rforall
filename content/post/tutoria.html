@@ -1,0 +1,386 @@
+---
+title: "Tutoriais"
+author: ""
+date: "25/04/2021"
+categories: ["site"]
+tags: ["teste"]
+---
+
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+
+<div id="the-refresh-theme-for-hugo" class="section level1">
+<h1>The ReFresh theme for Hugo</h1>
+<p><strong>ReFresh</strong> is a theme for the <a href="https://gohugo.io">Hugo</a> static site generator <em>highly</em> modified from the awesome <a href="https://github.com/StefMa/hugo-fresh">Fresh</a> theme (below you can find the list of changes to the original theme).</p>
+<p>You can find a live demo of the original Fresh theme <a href="https://themes.gohugo.io/theme/hugo-fresh/">here</a> or a demo of the Hugo ReFresh theme <a href="https://themes.gohugo.io/theme/hugo-refresh/">here</a>.</p>
+<p>You can find another example of ReFresh theme in <a href="https://rjordaney.is/">my personal website</a>.</p>
+<blockquote>
+<p>This theme is intended for personal website and blog. If you’d like to extend the theme to include other functionalities submit a pull request.</p>
+</blockquote>
+<div id="getting-started" class="section level2">
+<h2>Getting started</h2>
+<p>To create a new site using Hugo ReFresh:</p>
+<pre class="bash"><code># Create site and cd into it
+hugo new site my-site &amp;&amp; cd my-site
+
+# Clone the ReFresh theme into the themes folder
+git init
+git submodule add https://github.com/PippoRJ/hugo-refresh.git themes/hugo-refresh
+
+# Remove the default config
+rm config.toml
+
+# Fetch the example config
+curl -O https://raw.githubusercontent.com/PippoRJ/hugo-refresh/master/exampleSite/config.yaml
+
+# Run the site locally
+hugo server -D
+
+# Open the site in your browser
+open http://localhost:1313</code></pre>
+<p>To run the Example Site using Hugo ReFresh:</p>
+<pre class="bash"><code># Create site and cd into it
+hugo new site my-site &amp;&amp; cd my-site
+
+# Clone the ReFresh theme into the themes folder
+git init
+git submodule add https://github.com/PippoRJ/hugo-refresh themes/hugo-refresh
+
+# Remove the default config
+rm config.toml
+
+# Copy the Example site content and configuration in my-site
+cp -R themes/hugo-refresh/exampleSite/* ./
+
+# Open the site in your browser
+hugo server -D</code></pre>
+</div>
+<div id="troubleshooting" class="section level2">
+<h2>Troubleshooting</h2>
+<p>If you see <code>error: failed to transform resource: TOCSS: failed to transform "style.sass"</code> when attempting to run your <code>hugo server</code>, make sure you have the extended version of Hugo installed:</p>
+<pre class="bash"><code># On Ubuntu:
+snap refresh hugo --channel=extended</code></pre>
+</div>
+<div id="statistics-counter" class="section level2">
+<h2>Statistics counter</h2>
+<p>You can enter your Google / Yandex / etc statistic counter code into the <code>layouts/partials/counter.html</code>. Code will be generated right after open <code>&lt;body&gt;</code> tag.</p>
+</div>
+<div id="custom-head" class="section level2">
+<h2>Custom HEAD</h2>
+<p>If you want to include custom scripts at the end of the <code>HEAD</code> section, create a file in <code>layouts/partials/custom_head.html</code> and add your content there.</p>
+</div>
+<div id="customizing-your-page" class="section level2">
+<h2>Customizing your page</h2>
+<p>There are different configuration options for Hugo ReFresh including options for: the navbar, the sidebar, the homepage, fonts, colours landing, stats counters and images.
+Read the comments in the <code>config.yaml</code> file to know more.</p>
+<p>The images specified in the <code>config.yaml</code> file need to be placed in the directory specified by the <code>assetDir</code> option in the config file.
+E.g.: set <code>assetDir: "static"</code> to the set the default folder the <code>static</code> folder of your site.</p>
+</div>
+<div id="list-of-shortcodes-you-can-use-in-your-articles-with-description" class="section level2">
+<h2>List of shortcodes you can use in your articles with description:</h2>
+<p>A live example of these shortcodes can be found <a href="https://rjordaney.is/miscellaneous/example/">here</a>.</p>
+<details>
+<summary>
+title1.html, title2.html, title3.html, title4.html, title5.html, title6.html
+</summary>
+<p>Usage example:</p>
+<pre><code>{{&lt; title1 &quot;My awesome title&quot; &quot;my-title-id&quot;&gt;}}</code></pre>
+<p>The <strong>first parameter</strong> is the title of the shortcode (in this example is “My awesome title”).<br>
+The <strong>second paramter</strong> is the ID of the shortcode (in this example is “my-title-id”).<br>
+It can be used in links to the same page as:</p>
+<pre><code>[link to the title](#my-title-id)</code></pre>
+</details>
+<details>
+<summary>
+subtitle1.html, subtitle2.html, subtitle3.html, subtitle4.html, subtitle5.html, subtitle6.html
+</summary>
+<p>Usage example:</p>
+<pre><code>{{&lt; subtitle1 &quot;My awesome subtitle&quot; &quot;my-subtitle-id&quot;&gt;}}</code></pre>
+<p>The <strong>first parameter</strong> is the title of the shortcode (in this example is “My awesome subtitle”).<br>
+The <strong>second paramter</strong> is the ID of the shortcode (in this example is “my-subtitle-id”).<br>
+It can be used in links to the same page as:</p>
+<pre><code>[link to the subtitle](#my-subtitle-id)</code></pre>
+</details>
+<details>
+<summary>
+code.html
+</summary>
+<p>This shortcode builds a centred page that is two-third of the full size of the page.</p>
+<p>Usage example:</p>
+<pre><code>{{&lt; code language=&quot;shell&quot; &gt;}}
+    $ sudo bash -c &#39;echo 0 &gt; /proc/sys/kernel/randomize_va_space&#39;
+{{&lt; /code &gt;}}</code></pre>
+<p>This shortcode has 2 parameters:</p>
+<ul>
+<li><p><strong>line-numbers</strong> to hide or show the line numbers. The default is true, for single line code the number is never shown.</p></li>
+<li><p><strong>language</strong> is used to highlight the syntax of the code properly</p></li>
+</ul>
+</details>
+<details>
+<summary>
+codeWide.html
+</summary>
+<p>This shortcode builds a centred page that is as wide as the full size of the page.</p>
+<p>Usage example:</p>
+<pre><code>{{&lt; codeWide language=&quot;shell&quot; &gt;}}
+    $ dmesg | tail
+    ......
+    [13401.299114] overflow64[16566]: segfault at 616161616161 ip 0000616161616161 sp 00007fffffffddb0 error 14 in libc-2.27.so[7ffff79e4000+1e7000]
+{{&lt; /codeWide &gt;}}</code></pre>
+<p>This shortcode has 2 parameters:</p>
+<ul>
+<li><p><strong>line-numbers</strong> to hide or show the line numbers. The default is true, for single line code the number is never shown.</p></li>
+<li><p><strong>language</strong> is used to highlight the syntax of the code properly</p></li>
+</ul>
+</details>
+<details>
+<summary>
+container.html
+</summary>
+<p>This shortcode builds a centred page that is as wide as the two third of the size of the page. The content of the shortcode will pass through the markdown processor.</p>
+<p>Usage example:</p>
+<pre><code>{{&lt; container &quot;container-id&quot; &gt;}}
+
+{{&lt; /container &gt;}}</code></pre>
+<p>This shortcode has an optional parameter to give an ID to the html <code>div</code>.</p>
+</details>
+<details>
+<summary>
+containerWide.html
+</summary>
+<p>This shortcode builds a centred page that is as wide as the size of the page. The content of the shortcode will pass through the markdown processor.</p>
+<p>Usage example:</p>
+<pre><code>{{&lt; containerWide &quot;container-wide-id&quot; &gt;}}
+
+{{&lt; /containerWide &gt;}}</code></pre>
+<p>This shortcode has an optional parameter to give an ID to the html <code>div</code>.</p>
+</details>
+<details>
+<summary>
+figure.html
+</summary>
+<p>This shortcode resize an image that with the width and/or height that you specify</p>
+<p>Usage example:</p>
+<pre><code>{{&lt; figure src=&quot;images/the_stack.png&quot; width=&quot;700&quot; &gt;}}
+{{&lt; figure src=&quot;images/the_stack.png&quot; height=&quot;700&quot; &gt;}}</code></pre>
+<p>The parameter <strong>src</strong> is the location of the image relative to the location of the file where the shortcode has been used.<br>
+The parameter <strong>width</strong> is the width of the image.<br>
+The parameter <strong>height</strong> is the height of the image.<br>
+The parameter <strong>caption</strong> is the caption of the image.<br>
+The parameter <strong>alt</strong> is the alt property of the image.<br></p>
+</details>
+<details>
+<summary>
+twoFigure.html
+</summary>
+<p>This shortcode shows 2 images one next to the other with the possibility to resize them.</p>
+<p>Usage example:</p>
+<pre><code>{{&lt; twoFigure src1=&quot;images/overflow_1.png&quot; width1=&quot;700&quot; src2=&quot;images/overflow_2.png&quot; width2=&quot;700&quot; &gt;}}</code></pre>
+<p>The parameter <strong>src1</strong> is the location of the right image relative to the location of the file where the shortcode has been used.<br>
+The parameter <strong>width1</strong> is the width of the right image.<br>
+The parameter <strong>height1</strong> is the height of the right image.<br>
+The parameter <strong>caption1</strong> is the caption of the right image.<br>
+The parameter <strong>alt1</strong> is the alt property of the right image.<br>
+The parameter <strong>src2</strong> is the location of the left image relative to the location of the file where the shortcode has been used.<br>
+The parameter <strong>width2</strong> is the width of the left image.<br>
+The parameter <strong>height2</strong> is the height of the left image.<br>
+The parameter <strong>caption2</strong> is the caption of the left image.<br>
+The parameter <strong>alt2</strong> is the alt property of the left image.<br></p>
+<p>With a small screen these images will be shown one on top of the other.</p>
+<p>See example of use <a href="https://rjordaney.is/lectures/basic_buffer_overflow/">here</a></p>
+</details>
+<details>
+<summary>
+twoVideos.html
+</summary>
+<p>This shortcode shows 2 YouTube videos one next to the other.</p>
+<p>Usage example:</p>
+<pre><code>{{% twoVideos id2=&quot;pKRzfdIJUZE&quot; id1=&quot;Ncv2KmhVgyU&quot; autoplay1=true ratio1=&quot;4:3&quot; ratio2=&quot;16:9&quot; %}}</code></pre>
+<p>The parameter <strong>id1</strong> is the ID of the left video<br>
+The parameter <strong>id2</strong> is the ID of the right video<br>
+The parameter <strong>autoplay1</strong> is used to start the video on the left (the video will start on mute). Set it to “true” to activate autoplay.<br>
+The parameter <strong>autoplay2</strong> is used to start the video on the left (the video will start on mute). Set it to “true” to activate autoplay.<br>
+The parameter <strong>ratio1</strong> is used to specify the the ratio of the video on the left. It can be either “16:9” or “4:3”. The default is “16:9”.<br>
+The parameter <strong>ratio2</strong> is used to specify the the ratio of the video on the right. It can be either “16:9” or “4:3”. The default is “16:9”.<br></p>
+<p>With a small screen these videos will be shown one on top of the other.</p>
+</details>
+<details>
+<summary>
+book.html
+</summary>
+<p>Usage example:</p>
+<pre><code>{{&lt; book title=&quot;Title Awesome&quot; authors=&quot;Awesome author&quot; image=&quot;images/cover.jpg&quot; size=&quot;300x&quot;&gt;}}</code></pre>
+<p>The parameter <strong>title</strong> is the title of the book.<br>
+The parameter <strong>authors</strong> contains the authors of the book.<br>
+The parameter <strong>image</strong> is the cover of the book.<br></p>
+<p>The parameter <strong>size</strong> is used to specify the size of the book in pixel “width” x “height”.<br>
+E.g.: “300x” means 300px of width.<br>
+E.g.: “x300” means 300px of height. <br></p>
+<p>See example of use <a href="https://rjordaney.is/miscellaneous/ml_books/">here</a></p>
+</details>
+<details>
+<summary>
+exercise.html
+</summary>
+<p>Usage example:</p>
+<pre><code>{{&lt; exercise &gt;}}
+Text of the exercise.
+{{&lt; /exercise &gt;}}</code></pre>
+<p>This shortcode has no parameters.</p>
+<p>See example of use <a href="https://rjordaney.is/code_exercises/staircase_n_steps/">here</a></p>
+</details>
+<details>
+<summary>
+tabsCode.html
+</summary>
+<p>Usage example:</p>
+<pre><code>{{&lt; tabsCode 
+    file1=&quot;/content/code_exercises/staircase_n_steps/code/solution_python.md&quot; language1=&quot;python&quot; title1=&quot;Python&quot; icon1=&quot;python&quot;
+    file2=&quot;/content/code_exercises/staircase_n_steps/code/solution_c.md&quot; language1=&quot;c&quot; title2=&quot;C&quot; icon2=&quot;c&quot;
+    file3=&quot;/content/code_exercises/staircase_n_steps/code/solution_java.md&quot; language1=&quot;java&quot; title3=&quot;Java&quot; icon3=&quot;java&quot; 
+&gt;}}</code></pre>
+<p>The parameter <strong>file1</strong> is the name of the code file to be displayed in the first tab.
+The path needs to start from the <code>content</code> folder.<br>
+The parameter <strong>language1</strong> is used to highlight the syntax of the code properly.
+The parameter <strong>title1</strong> is the title of the first tab.<br>
+The parameter <strong>icon1</strong> is the icon to be shown at the right of the title, it is an optional parameter. See the partial code <code>icon.html</code> for the available icons.</p>
+<p>There are 6 tabs supported at this moment</p>
+<ul>
+<li><p>the files parameters are <strong>file1</strong>, <strong>file2</strong>, <strong>file3</strong>, <strong>file4</strong>, <strong>file5</strong>, <strong>file6</strong></p></li>
+<li><p>the titles parameters are <strong>title1</strong>, <strong>title2</strong>, <strong>title3</strong>, <strong>title4</strong>, <strong>title5</strong>, <strong>title6</strong></p></li>
+<li><p>the languages parameters are <strong>language1</strong>, <strong>language2</strong>, <strong>language3</strong>, <strong>language4</strong>, <strong>language5</strong>, <strong>language6</strong></p></li>
+<li><p>the icons parameters are <strong>icon1</strong>, <strong>icon2</strong>, <strong>icon3</strong>, <strong>icon4</strong>, <strong>icon5</strong>, <strong>icon6</strong></p></li>
+</ul>
+<p>See example of use <a href="https://rjordaney.is/code_exercises/staircase_n_steps/">here</a></p>
+</details>
+<details>
+<summary>
+tabs.html
+</summary>
+<p>Usage example:</p>
+<pre><code>{{&lt; tabs 
+    file1=&quot;/content/exercises/article1/comments/my_comments.md&quot; title1=&quot;My Ideas&quot;
+    file2=&quot;/content/exercises/article1/comments/your_comments.md&quot; title2=&quot;Your Ideas&quot; 
+    file3=&quot;/content/exercises/article1/comments/her_comments.md&quot; title3=&quot;Her Ideas&quot;  
+&gt;}}</code></pre>
+<p>The content of the files (file1, file2 …) are passed through the markdown processor, so you can use markdown in these files.</p>
+<p>The parameter <strong>file1</strong> is the name of the code file to be displayed in the first tab.
+The path needs to start from the <code>content</code> folder.<br>
+The parameter <strong>title1</strong> is the title of the first tab.<br>
+The parameter <strong>icon1</strong> is the icon to be shown at the right of the title, it is an optional parameter. See the partial code <code>icon.html</code> for the available icons.</p>
+<p>There are 6 tabs supported at this moment</p>
+<ul>
+<li><p>the files parameters are <strong>file1</strong>, <strong>file2</strong>, <strong>file3</strong>, <strong>file4</strong>, <strong>file5</strong>, <strong>file6</strong></p></li>
+<li><p>the titles parameters are <strong>title1</strong>, <strong>title2</strong>, <strong>title3</strong>, <strong>title4</strong>, <strong>title5</strong>, <strong>title6</strong></p></li>
+<li><p>the icons parameters are <strong>icon1</strong>, <strong>icon2</strong>, <strong>icon3</strong>, <strong>icon4</strong>, <strong>icon5</strong>, <strong>icon6</strong></p></li>
+</ul>
+</details>
+<details>
+<summary>
+codeInLine.html
+</summary>
+<p>Usage example:</p>
+<pre><code>{{&lt; codeInline &gt;}}sudo echo 0 &gt; /proc/sys/kernel/randomize_va_space{{&lt; /codeInline &gt;}}</code></pre>
+<p>This shortcode has 2 parameters:</p>
+<ul>
+<li><p><strong>language</strong> is used to highlight the syntax of the code properly</p></li>
+<li><p><strong>id</strong> to set a id of the html <code>code</code> element</p></li>
+</ul>
+<p>See an example of usage <a href="https://rjordaney.is/lectures/basic_buffer_overflow/">here</a></p>
+</details>
+<details>
+<summary>
+messageBlue.html, messageDark.html, messageGreen.html, messageRed.html, messageYellow.html
+</summary>
+</details>
+<details>
+<summary>
+notificationBlue.html, notificationGreen.html, notificationRed.html, notificationYellow.html
+</summary>
+</details>
+<details>
+<summary>
+siteBlue.html, siteGreen.html, siteLightgreen.html, siteRed.html, siteYellow.html
+</summary>
+<p>Usage example:</p>
+<pre><code>{{&lt; siteLightgreen &quot;Web&quot; &quot;https://www.example.com&quot; &gt;}}
+&lt;p&gt;Description of the website.&lt;/p&gt;
+{{&lt; /siteLightgreen &gt;}}</code></pre>
+<p>The <strong>first parameter</strong> will appear in the right coloured part of the shortcode.<br>
+The <strong>second parameter</strong> will appear in the middle part of the shortcode.<br></p>
+<p>See example of usage <a href="https://rjordaney.is/miscellaneous/ctf_resources/">here</a></p>
+</details>
+</div>
+<div id="customization-options-for-a-regular-page" class="section level2">
+<h2>Customization options for a regular page</h2>
+<p>These are the options that you can define is the front matter of a regular page:</p>
+<pre><code>---
+title: &quot;My Awesome Title&quot;
+date: 2019-06-03T21:51:13+01:00
+draft: false
+hideLastModified: true
+summaryImage: &quot;images/system.jpg&quot; 
+keepImageRatio: true
+tags: [&quot;Tag1&quot;, &quot;tag2&quot;, &quot;tag 3&quot;]
+summary: &quot;This is a custom summary for my article&quot;
+showInMenu: true
+---</code></pre>
+<ul>
+<li><p><code>summaryImage</code>: it is used to specify the image to be used in the summary</p></li>
+<li><p><code>keepImageRatio</code>: it is used to force the aspect ratio of the image to be kept. The default value is <strong>false</strong>.</p></li>
+<li><p><code>summary</code>: it is used to specify the summary of an article instead of taking it from the article itself.</p></li>
+<li><p><code>hideLastModified</code>: it is used to hide the the timestamp added at the end of the article.</p></li>
+<li><p><code>showInMenu</code>: it is used to show the article in the top right menu.</p></li>
+<li><p><code>tags</code>: it is the list of tags for the article; they will be used to build the left sidebar.</p></li>
+</ul>
+<p>To avoid path problems when specifying the <code>summaryImage</code>, it is recommended to define a regular page as a leaf bundle. The example above will result in:</p>
+<pre><code>* my_awesome_title (folder)
+   * index.md (file)
+   * images (folder)
+      * system.jpg (file)</code></pre>
+</div>
+<div id="multilanguage-support" class="section level2">
+<h2>Multilanguage support</h2>
+<p>To chose the default language you need to set the <code>DefaultContentLanguage</code> setting in the <code>config.yaml</code> file.
+(You can also have multiple languages at the same time, see <code>exampleSite/config.yaml</code> for an example.)</p>
+<p>The language supported are:</p>
+<ul>
+<li><p>English</p></li>
+<li><p>Spanish</p></li>
+<li><p>French</p></li>
+<li><p>Italian</p></li>
+<li><p>Russian</p></li>
+<li><p>Chinese</p></li>
+<li><p>Polish</p></li>
+<li><p>German</p></li>
+</ul>
+<p>If you want to add a missing language please submit a feature request.</p>
+</div>
+<div id="list-of-modifications-from-the-original-theme" class="section level2">
+<h2>List of modifications from the original theme</h2>
+<ul>
+<li><p>The ReFresh theme was transformed from <em>single page</em> template to <em>multipage</em>.</p></li>
+<li><p>Added multilanguage support.</p></li>
+<li><p>The left side menu now contains page tags along with theirs post counter.</p></li>
+<li><p>The <em>list</em> and <em>terms</em> types of pages contain a list of the post summaries.</p></li>
+<li><p>The images used to build the summaries can be resized to allow better usage of the bandwidth.</p></li>
+<li><p>The js and css files can be minified (with a configurable option on the <code>config.yaml</code>).</p></li>
+<li><p>The menu is automatically built following the structure of the <code>content</code> folder. Two levels are allowed at the moment.</p></li>
+<li><p>The <code>navbar-burger</code> used in the original theme’s menu is removed (it was displayed when the page was resized).</p></li>
+<li><p>The <code>.sass</code> files are now processed with <code>resources.ExecuteAsTemplate</code> so that it is possible to use variables from the <code>config.yaml</code>.</p></li>
+<li><p>Options in the <code>config.yaml</code> are added to configure the font-family for the navbar, sidebar and content of the a page.</p></li>
+<li><p><a href="https://bulma.io/">Bulma</a> (the css framework the theme is based on) is now updated to version 0.7.5 because in the new version the class <em>content</em> has a separate style to allow modification that will impact only the contents of the posts.</p></li>
+<li><p><a href="https://highlightjs.org/">highlight.js</a> was added to better highlight the code sections of the posts. I chose the style <strong>monokai-sublime</strong>.</p></li>
+<li><p><a href="https://github.com/wcoder/highlightjs-line-numbers.js/">highlightjs-line-number.js</a> was added to have the line number at the beginning of each line of code in a code sections of a post.</p></li>
+<li><p>A minimal version of <a href="https://www.mathjax.org/">MathJax</a> was added to allow LaTeX style mathematical expressions to be placed in the site.</p></li>
+<li><p>Several other options are added to personalise the content of a post.</p></li>
+<li><p>A shortcode is added to resize the images and save bandwidth in a post content.</p></li>
+<li><p>A shortcode is added to show multiple tabs.</p></li>
+<li><p>Four shortcodes are added to show code: inline, in page, in page wide, in tabs.</p></li>
+<li><p>The loaders images are now processed with <code>resources.ExecuteAsTemplate</code> so that they take the main colour of the theme (defined in <code>config.yaml</code>)</p></li>
+<li><p>The <em>favicon</em> is processed with <code>resources.ExecuteAsTemplate</code> to follow the main colour of the page.</p></li>
+<li><p>Added Open Graph meta tags to each post for easy-sharing on social media sites.</p></li>
+<li><p>All the js and css files are loaded locally, i.e., not loaded from third party sites.</p></li>
+</ul>
+</div>
+</div>

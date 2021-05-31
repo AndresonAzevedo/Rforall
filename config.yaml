@@ -1,134 +1,135 @@
 baseURL: https://faceafacecomaestatistica
 languageCode: pt-en
-title: Face a Face com a Estatistica
+title: Blog pessoal para brincar com estatística
 theme: "hugo-refresh"
 # theme: ../..
 
 #########################################
-######## Uncomment this option ##########
+######## Descomente esta opcao##########
 #########################################
-# This options specify where to look for the images used in this config
-# The default value is the "asset" directory of this theme
-# assetDir: "static"
+# Estas opções especificam onde procurar as imagens usadas nesta configuração
+# O valor padrão é o diretório "ativo" ("asset") deste tema
+# assetDir: "static" 
 
-# Option to specify the default language of the theme
-# I.e., the landing language of your root 
+# Opção para especificar o idioma padrão do tema
+# Ou seja, o idioma de destino de sua raiz 
 DefaultContentLanguage: pt
 
-## Option to disable additional language in your site.
-# disableLanguages: ["ru"]
+## Opção para desativar o idioma adicional em seu site.
+disableLanguages: ["en"]
 
 disableKinds: ["sitemap","RSS"]
 
-# Option to specify that all links will be open in a new tab.
+# Opção para especificar que todos os links serão abertos em uma nova guia.
 blackfriday:
   hrefTargetBlank: true
 
 Taxonomies:
   tag: "tags"
 
-# Supported fonts are:
+# As fontes suportadas são:
 # https://fonts.google.com/
 
-# Icons taken from:
+# Ícones retirados de:
 # https://konpa.github.io/devicon/
 # https://bulkitv2.cssninja.io/_components-icons-fa.html
 
 params:
-  # parameter used to specify the number of article in each row 
-  # for the summary pages, the possible options are: 2, 3, 4, 5 or 6
+  # parâmetros usados para especificar o número de artigos em cada linha
+  # para as páginas de resumo, as opções possíveis são: 2, 3, 4, 5 ou 6
   articlesPerRow: 3 
 
-  # option to specify the favicon image of the site
-  # the path is relative to the folder "assetDir" of this configuration
+  # opção para especificar a imagem favicon do site
+  # o caminho é relativo à pasta "assetDir" desta configuração
   favicon: "/images/favicon.svg"
 
-  # parameter used to specify if you want to minify the imported js
+  # parâmetro usado para especificar se você deseja minimizar o js importado
   jsMinify: false
-  # parameter used to specify if you want to minify the imported css
+  # parâmetro usado para especificar se você deseja minificar o css importado
   cssMinify: false
-  # parameter used to specify if you want to calculate the css integrity
+  # parâmetros usados para especificar se você deseja calcular a integridade css
   cssIntegrity: true
-  # parameter used to specify if you want to calculate the js integrity
+  # parâmetros usados para especificar se você deseja calcular a integridade js
   jsIntegrity: true
-  # option to specify the main colour of the theme
-  mainColour: "#F39200"
+  # opção para especificar a cor principal do tema
+  mainColour: "#0000FF"
 
-  # summary options
+  # opções de resumo
   summary:
-    # option to specify the default image in the summary list
-    # the starting folder is configure in "assetDir" of this file
+    # opção para especificar a imagem padrão na lista de resumo
+    # a pasta inicial é configurada em "assetDir" deste arquivo
     defaultImage : "/images/default_summary.jpg"
   
   # loading options
   loading:
-    # option to specify the loading image
-    # the starting folder is configure in "assetDir" of this file
+    # opção para especificar a imagem de carregamento
+    # a pasta inicial é configurada em "assetDir" deste arquivo
     image: "/images/loaders/rings.svg"
 
-  # main pages options
+  # opções das páginas principais
   mainPage:
-    # option to specify the main font of the theme
+    # opção para especificar a fonte principal do tema
     fontFamily: "Open Sans" 
 
-  # sidebar options
+  # opções da barra lateral
   sidebar:
-    # option to specify the logo of the sidebar
-    # the starting folder is configure in "assetDir" of this file
+    # opção para especificar o logotipo da barra lateral
+    # a pasta inicial é configurada em "assetDir" deste arquivo
     logo: "/images/refresh-square.svg"
     # option to specify the font of the sidebar
     fontFamily: "Open Sans" # "Open Sans"
 
-  # navbar options
+  # opções da barra de navegação
   navbar:
-    # option to specify the font used in the navbar
+    # opção para especificar a fonte usada na barra de navegação
     fontFamily: "Open Sans"
-    # option to show the little logos on the side of the navbar items
+    # opção de mostrar os pequenos logotipos ao lado dos itens da barra de navegação
     showIcons: false
     
-  # 404 page options
+  # Opções de página 404
   pagNotFound:
-    # option to specify the main picture of the sidebar
-    # the starting folder is configure in "assetDir" of this file
+    # opção para especificar a imagem principal da barra lateral
+    # a pasta inicial é configurada em "assetDir" deste arquivo
     image: "/images/avataaars_404.png"
-    # option to specify the title of the 404 page
+    # opção para especificar o título da página 404
     title: 404 Page Not Found :(
-    # option to specify the subtitle of the 404 page
-    subtitle: This is not the page you were looking for...
-    # option to specify the width of the image in the 404 page
+    # opção para especificar o subtítulo da página 404
+    subtitle: Esta não é a página que você estava procurando ...
+    # opção para especificar a largura da imagem na página 404
     imageWidth: 500px
 
-  # homepage options
+  # opções da página inicial
   homepage:
-    # this options let you specify if you want a link to the homepage
-    # it can be: "none", "menu", "footer" or "menu+footer"
-    # linkPosition: "footer" 
-    # this options let you specify the text of the link to the homepage
-    # linkText: "Homepage"  
-    # option to specify the title in the homepage
+    # essas opções permitem que você especifique se deseja um link para a página inicial
+    # it can be: "none", "menu", "footer" or "menu+footer" 
+    # (pode ser: "nenhum", "menu", "rodapé" ou "menu + rodapé")
+    # linkPosition: "footer" (linkPosition: "rodapé")
+    # essas opções permitem que você especifique o texto do link para a página inicial
+    # linkText: "Homepage" (linkText: "Página inicial")
+    # opção para especificar o título na página inicial
     title: Face a Face com a Estatística
-    # option to specify the subtitle in the homepage
+    # opção para especificar o subtítulo na página inicial
     subtitle: 
-    # option to specify image in the homepage
+    # opção para especificar a imagem na página inicial
     image: "/images/avataaars.png" # worker.svg 
-    # option to specify the width of the image in the homepage
+    # opção para especificar a largura da imagem na página inicial
     imageWidth: 500px
 
-  # footer options
+  # footer options (opções de rodapé)
   footer:
-    # option to specify the logo in the footer
-    # the starting folder is configure in "assetDir" of this file
+    # opção para especificar o logotipo no rodapé
+    # a pasta inicial é configurada em "assetDir" deste arquivo
     logo: "/images/refresh-square.svg"
-    # option to specify your contact email in the footer
+    # opção de especificar seu e-mail de contato no rodapé
     email: 
       link: andresondez@hotmail.com
       title: andresondez@hotmail.com
-    # option to specify your linkedin profile in the footer
+    # opção de especificar seu perfil do LinkedIn no rodapé
     linkedin: 
-      link: /in/andreson-azevedo/
+      link: https://www.linkedin.com/in/andreson-azevedo/
       title: andreson-azevedo/
-    # option to specify your facebook account in the footer; 
-    # **uncomment** the lines below to show in footer
+    # opção de especificar sua conta do Facebook no rodapé; 
+    # ** descomente ** as linhas abaixo para mostrar no rodapé
     # facebook: 
     #   link: your.username
     #   title: Facebook
@@ -154,37 +155,37 @@ params:
 ################## multilanguage support options ##################
 ###################################################################
 languages:
+  pt:
+    languageName:       Portuguese
+    weight:             1
   en:
     languageName:       English
-    weight:             1
-  ru:
-    languageName:       Russian
     weight:             2
-    # When Specifying different parameters for a different language 
-    # you need to specify all the mandatory sub-parameters as well.
-    # E.g.: if you specify the "homepage" parameter then you need to
-    #       specify all mandatory sub-parameters, e.g.: "title". 
-    # See example below:
+    # Ao especificar parâmetros diferentes para um idioma diferente
+    # você precisa especificar todos os subparâmetros obrigatórios também.
+    #Por exemplo: se você especificar o parâmetro "homepage", será necessário
+    #       especifique todos os subparâmetros obrigatórios, por exemplo: "título".
+    # Veja o exemplo abaixo:
     params:
       homepage:
-        title: Julia белая краска
-        subtitle: Персональный сайт и блог
+        title: Face to Face with Statistics
+        subtitle: 
         image: "/images/avataaars.png" # worker.svg 
         imageWidth: 500px
       
-      # Some sub-parameters of the "footer" parameter
-      # can be omitted because the code allows for them to be 
-      # missed but they will treated as they do not exist,
-      # i.e., the parameters of the default language
-      # won't be inherited.
+      # Alguns subparâmetros do parâmetro "rodapé"
+      # pode ser omitido porque o código permite que eles sejam 
+      # perdidos, mas eles serão tratados como se não existissem,
+      # ou seja, os parâmetros do idioma padrão
+      # não será herdado.
       footer:
         logo: "/images/refresh-square.svg"
         email: 
-          link: имя.фамилия@домен.com
-          title: Эл. адрес
+          link: andresondez@hotmail.com
+          title: andresondez@hotmail.com
         linkedin: 
-          link: your_linkedin_profile
-          title: LinkedIn
+          link: https://www.linkedin.com/in/andreson-azevedo/
+          title: andreson-azevedo/
         # facebook: 
         #   link: your.username
         #   title: Facebook 
@@ -197,5 +198,10 @@ languages:
         # github: 
         #   link: username
         #   title: Github
-        copyright: Julia белая краска - 2020
+        copyright: Face to Face with Statistics - 2021
       
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
