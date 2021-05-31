@@ -1,0 +1,20 @@
+- id: readMore
+  translation: "Leia mais"
+- id: mainMenu
+  translation: "Menu"
+- id: allTags
+  translation: "Todas as Tags"
+- id: tags
+  translation: "Tags"
+- id: lastModified
+  translation: "Última modificação"
+- id: website
+  translation: "Local na rede Internet"
+- id: credits
+  translation: "Créditos"
+- id: copyright
+  translation: "Direito Autoral"
+- id: contacts
+  translation: "Contatos"
+- id: homepage
+  translation: "Pagina Inicial"
