@@ -1,5 +1,9 @@
 - id: readMore
+<<<<<<< HEAD
   translation: "Leia Mais"
+=======
+  translation: "Leia mais"
+>>>>>>> f9c93421e4d590e740ba7ab4d3253f405dca9aab
 - id: mainMenu
   translation: "Menu"
 - id: allTags
@@ -7,6 +11,7 @@
 - id: tags
   translation: "Tags"
 - id: lastModified
+<<<<<<< HEAD
   translation: "Ùltima modificação"
 - id: website
   translation: "Local na Rede Internet"
@@ -14,6 +19,15 @@
   translation: "Créditos"
 - id: copyright
   translation: "Direitos Autorais"
+=======
+  translation: "Última modificação"
+- id: website
+  translation: "Local na rede Internet"
+- id: credits
+  translation: "Créditos"
+- id: copyright
+  translation: "Direito Autoral"
+>>>>>>> f9c93421e4d590e740ba7ab4d3253f405dca9aab
 - id: contacts
   translation: "Contatos"
 - id: homepage

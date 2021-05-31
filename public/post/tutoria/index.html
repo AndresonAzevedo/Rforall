@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="pt-en">
+  <head><link rel="icon" href="/favicon_main.svg"><meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta http-equiv="x-ua-compatible" content="ie=edge" /><meta property="og:url"  content="https://faceafacecomaestatistica/post/tutoria/" />
+    <meta property="og:type" content="article" /><meta property="og:title" content="Tutoriais" /><meta property="og:description" content="" /><meta property="og:image:width"  content="375" />
+        <meta property="og:image:height" content="250" /><meta property="og:image" content="https://faceafacecomaestatistica/images/default_summary_hu2be732aee21a2469ead3fe1f2df8caca_2088687_600x0_resize_q75_box.jpg" /><title>Blog pessoal para brincar com estatística - Tutoriais</title>
+
+    
+<link href="https://fonts.googleapis.com/css?family=Open&#43;Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open&#43;Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open&#43;Sans" rel="stylesheet"><link rel="stylesheet" type="text/css" href="/css/style.f56c66e52d77f6d63141587fbdf4b3abcc70f276b890591d5c7c9a5b39725cdd.css" integrity="sha256-9Wxm5S139tYxQVh/vfSzq8xw8na4kFkdXHyaWzlyXN0=">
+<link rel="stylesheet" type="text/css" href="/css/monokai-sublime.9.15.8.min.91376415864fdd3a92be524052267afece4bdb1bb8c6c754f5e60c5ac28e93be.css" integrity="sha256-kTdkFYZP3TqSvlJAUiZ6/s5L2xu4xsdU9eYMWsKOk74=">
+<link rel="stylesheet" type="text/css" href="/css/icons.f72c0103ff9598115ab2a76351494b950570479ce3f1795fec13fc62e4185dcf.css" integrity="sha256-9ywBA/&#43;VmBFasqdjUUlLlQVwR5zj8Xlf7BP8YuQYXc8=">
+<link rel="stylesheet" type="text/css" href="/css/refresh.ccfd23f8053a1571a3e474a6877f42a6a1924c6bbf1b64c7704b49a0353b4650.css" integrity="sha256-zP0j&#43;AU6FXGj5HSmh39CpqGSTGu/G2THcEtJoDU7RlA=">
+<link rel="stylesheet" type="text/css" href="/css/devicon.min.149016fbf45c8bc157d6f55ce3ee875feaa3f90446bf7d151fbc16a9f21a8859.css" integrity="sha256-FJAW&#43;/Rci8FX1vVc4&#43;6HX&#43;qj&#43;QRGv30VH7wWqfIaiFk=">
+    
+
+  </head>
+  <body>
+     
+
+    <div id="preloader">
+      <div id="status"></div>
+    </div><nav class="navbar is-fresh is-transparent no-shadow" role="navigation" aria-label="main navigation">
+  <div class="container">
+    <div class="navbar-brand">
+
+      
+      
+      
+      <a class="navbar-item">
+        <div class="menu-icon-wrapper left-menu-icon-wrapper" style="visibility: visible;">
+          <svg width="1000px" height="1000px">
+            <path class="path1" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
+            <path class="path2" d="M 300 500 L 700 500"></path>
+            <path class="path3" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
+          </svg>
+          <button id="menu-icon-trigger" class="menu-icon-trigger"></button>
+        </div>
+        <div class="navbar-item left-menu-icon-wrapper">
+          Tags
+        </div>
+      </a>
+
+      <div class="navbar-item is-expanded"></div>
+      <a class="navbar-item is-hidden-desktop">  
+        <div data-target="navbar-menu" class="navbar-item right-menu-icon-wrapper is-hidden-desktop">
+          Menu
+        </div>
+        <div data-target="navbar-menu" class="menu-icon-wrapper right-menu-icon-wrapper" style="visibility: visible;">
+          <svg width="1000px" height="1000px">
+            <path class="path1" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
+            <path class="path2" d="M 300 500 L 700 500"></path>
+            <path class="path3" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
+          </svg>
+          <button id="menu-icon-trigger" class="menu-icon-trigger"></button>
+        </div>
+      </a>
+    </div><div id="navbar-menu" class="navbar-menu is-static">
+      
+      <div class="navbar-end">
+        <a href="/post/" class="navbar-item is-secondary">Posts</a>
+        
+        
+      </div>
+    </div>
+  </div>
+</nav>
+<nav id="navbar-clone" class="navbar is-fresh is-transparent" role="navigation" aria-label="main navigation">
+  <div class="container">
+      <div class="navbar-brand">
+  
+        
+        
+        
+        <a class="navbar-item">
+          <div class="menu-icon-wrapper left-menu-icon-wrapper" style="visibility: visible;">
+            <svg width="1000px" height="1000px">
+              <path class="path1" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
+              <path class="path2" d="M 300 500 L 700 500"></path>
+              <path class="path3" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
+            </svg>
+            <button id="menu-icon-trigger" class="menu-icon-trigger"></button>
+          </div>
+          <div class="navbar-item left-menu-icon-wrapper">
+            Tags
+          </div>
+        </a>
+  
+        <div class="navbar-item is-expanded"></div>
+        <a class="navbar-item is-hidden-desktop">  
+          <div data-target="cloned-navbar-menu" class="navbar-item right-menu-icon-wrapper is-hidden-desktop">
+            Menu
+          </div>
+          <div data-target="cloned-navbar-menu" class="menu-icon-wrapper right-menu-icon-wrapper" style="visibility: visible;">
+            <svg width="1000px" height="1000px">
+              <path class="path1" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
+              <path class="path2" d="M 300 500 L 700 500"></path>
+              <path class="path3" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
+            </svg>
+            <button id="menu-icon-trigger" class="menu-icon-trigger"></button>
+          </div>
+        </a>
+      </div><div id="cloned-navbar-menu" class="navbar-menu is-static">
+        <div class="navbar-end"><a href="/post/" class="navbar-item is-secondary">Posts</a>
+          
+          
+        
+        </div>
+      </div>
+    </div>
+  </nav>
+<section class="section is-medium">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-centered-tablet-portrait">
+        <h1 class="title is-2 section-title">Tutoriais</h1>
+        <h5 class="subtitle is-5 is-muted"></h5>
+        <div class="divider"></div>
+        
+        <section class="section content has-text-justified">
+          
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+
+<div id="the-refresh-theme-for-hugo" class="section level1">
+<h1>The ReFresh theme for Hugo</h1>
+<p><strong>ReFresh</strong> is a theme for the <a href="https://gohugo.io">Hugo</a> static site generator <em>highly</em> modified from the awesome <a href="https://github.com/StefMa/hugo-fresh">Fresh</a> theme (below you can find the list of changes to the original theme).</p>
+<p>You can find a live demo of the original Fresh theme <a href="https://themes.gohugo.io/theme/hugo-fresh/">here</a> or a demo of the Hugo ReFresh theme <a href="https://themes.gohugo.io/theme/hugo-refresh/">here</a>.</p>
+<p>You can find another example of ReFresh theme in <a href="https://rjordaney.is/">my personal website</a>.</p>
+<blockquote>
+<p>This theme is intended for personal website and blog. If you’d like to extend the theme to include other functionalities submit a pull request.</p>
+</blockquote>
+<div id="getting-started" class="section level2">
+<h2>Getting started</h2>
+<p>To create a new site using Hugo ReFresh:</p>
+<pre class="bash"><code># Create site and cd into it
+hugo new site my-site &amp;&amp; cd my-site
+
+# Clone the ReFresh theme into the themes folder
+git init
+git submodule add https://github.com/PippoRJ/hugo-refresh.git themes/hugo-refresh
+
+# Remove the default config
+rm config.toml
+
+# Fetch the example config
+curl -O https://raw.githubusercontent.com/PippoRJ/hugo-refresh/master/exampleSite/config.yaml
+
+# Run the site locally
+hugo server -D
+
+# Open the site in your browser
+open http://localhost:1313</code></pre>
+<p>To run the Example Site using Hugo ReFresh:</p>
+<pre class="bash"><code># Create site and cd into it
+hugo new site my-site &amp;&amp; cd my-site
+
+# Clone the ReFresh theme into the themes folder
+git init
+git submodule add https://github.com/PippoRJ/hugo-refresh themes/hugo-refresh
+
+# Remove the default config
+rm config.toml
+
+# Copy the Example site content and configuration in my-site
+cp -R themes/hugo-refresh/exampleSite/* ./
+
+# Open the site in your browser
+hugo server -D</code></pre>
+</div>
+<div id="troubleshooting" class="section level2">
+<h2>Troubleshooting</h2>
+<p>If you see <code>error: failed to transform resource: TOCSS: failed to transform "style.sass"</code> when attempting to run your <code>hugo server</code>, make sure you have the extended version of Hugo installed:</p>
+<pre class="bash"><code># On Ubuntu:
+snap refresh hugo --channel=extended</code></pre>
+</div>
+<div id="statistics-counter" class="section level2">
+<h2>Statistics counter</h2>
+<p>You can enter your Google / Yandex / etc statistic counter code into the <code>layouts/partials/counter.html</code>. Code will be generated right after open <code>&lt;body&gt;</code> tag.</p>
+</div>
+<div id="custom-head" class="section level2">
+<h2>Custom HEAD</h2>
+<p>If you want to include custom scripts at the end of the <code>HEAD</code> section, create a file in <code>layouts/partials/custom_head.html</code> and add your content there.</p>
+</div>
+<div id="customizing-your-page" class="section level2">
+<h2>Customizing your page</h2>
+<p>There are different configuration options for Hugo ReFresh including options for: the navbar, the sidebar, the homepage, fonts, colours landing, stats counters and images.
+Read the comments in the <code>config.yaml</code> file to know more.</p>
+<p>The images specified in the <code>config.yaml</code> file need to be placed in the directory specified by the <code>assetDir</code> option in the config file.
+E.g.: set <code>assetDir: "static"</code> to the set the default folder the <code>static</code> folder of your site.</p>
+</div>
+<div id="list-of-shortcodes-you-can-use-in-your-articles-with-description" class="section level2">
+<h2>List of shortcodes you can use in your articles with description:</h2>
+<p>A live example of these shortcodes can be found <a href="https://rjordaney.is/miscellaneous/example/">here</a>.</p>
+<details>
+<summary>
+title1.html, title2.html, title3.html, title4.html, title5.html, title6.html
+</summary>
+<p>Usage example:</p>
+<pre><code>{{&lt; title1 &quot;My awesome title&quot; &quot;my-title-id&quot;&gt;}}</code></pre>
+<p>The <strong>first parameter</strong> is the title of the shortcode (in this example is “My awesome title”).<br>
+The <strong>second paramter</strong> is the ID of the shortcode (in this example is “my-title-id”).<br>
+It can be used in links to the same page as:</p>
+<pre><code>[link to the title](#my-title-id)</code></pre>
+</details>
+<details>
+<summary>
+subtitle1.html, subtitle2.html, subtitle3.html, subtitle4.html, subtitle5.html, subtitle6.html
+</summary>
+<p>Usage example:</p>
+<pre><code>{{&lt; subtitle1 &quot;My awesome subtitle&quot; &quot;my-subtitle-id&quot;&gt;}}</code></pre>
+<p>The <strong>first parameter</strong> is the title of the shortcode (in this example is “My awesome subtitle”).<br>
+The <strong>second paramter</strong> is the ID of the shortcode (in this example is “my-subtitle-id”).<br>
+It can be used in links to the same page as:</p>
+<pre><code>[link to the subtitle](#my-subtitle-id)</code></pre>
+</details>
+<details>
+<summary>
+code.html
+</summary>
+<p>This shortcode builds a centred page that is two-third of the full size of the page.</p>
+<p>Usage example:</p>
+<pre><code>{{&lt; code language=&quot;shell&quot; &gt;}}
+    $ sudo bash -c &#39;echo 0 &gt; /proc/sys/kernel/randomize_va_space&#39;
+{{&lt; /code &gt;}}</code></pre>
+<p>This shortcode has 2 parameters:</p>
+<ul>
+<li><p><strong>line-numbers</strong> to hide or show the line numbers. The default is true, for single line code the number is never shown.</p></li>
+<li><p><strong>language</strong> is used to highlight the syntax of the code properly</p></li>
+</ul>
+</details>
+<details>
+<summary>
+codeWide.html
+</summary>
+<p>This shortcode builds a centred page that is as wide as the full size of the page.</p>
+<p>Usage example:</p>
+<pre><code>{{&lt; codeWide language=&quot;shell&quot; &gt;}}
+    $ dmesg | tail
+    ......
+    [13401.299114] overflow64[16566]: segfault at 616161616161 ip 0000616161616161 sp 00007fffffffddb0 error 14 in libc-2.27.so[7ffff79e4000+1e7000]
+{{&lt; /codeWide &gt;}}</code></pre>
+<p>This shortcode has 2 parameters:</p>
+<ul>
+<li><p><strong>line-numbers</strong> to hide or show the line numbers. The default is true, for single line code the number is never shown.</p></li>
+<li><p><strong>language</strong> is used to highlight the syntax of the code properly</p></li>
+</ul>
+</details>
+<details>
+<summary>
+container.html
+</summary>
+<p>This shortcode builds a centred page that is as wide as the two third of the size of the page. The content of the shortcode will pass through the markdown processor.</p>
+<p>Usage example:</p>
+<pre><code>{{&lt; container &quot;container-id&quot; &gt;}}
+
+{{&lt; /container &gt;}}</code></pre>
+<p>This shortcode has an optional parameter to give an ID to the html <code>div</code>.</p>
+</details>
+<details>
+<summary>
+containerWide.html
+</summary>
+<p>This shortcode builds a centred page that is as wide as the size of the page. The content of the shortcode will pass through the markdown processor.</p>
+<p>Usage example:</p>
+<pre><code>{{&lt; containerWide &quot;container-wide-id&quot; &gt;}}
+
+{{&lt; /containerWide &gt;}}</code></pre>
+<p>This shortcode has an optional parameter to give an ID to the html <code>div</code>.</p>
+</details>
+<details>
+<summary>
+figure.html
+</summary>
+<p>This shortcode resize an image that with the width and/or height that you specify</p>
+<p>Usage example:</p>
+<pre><code>{{&lt; figure src=&quot;images/the_stack.png&quot; width=&quot;700&quot; &gt;}}
+{{&lt; figure src=&quot;images/the_stack.png&quot; height=&quot;700&quot; &gt;}}</code></pre>
+<p>The parameter <strong>src</strong> is the location of the image relative to the location of the file where the shortcode has been used.<br>
+The parameter <strong>width</strong> is the width of the image.<br>
+The parameter <strong>height</strong> is the height of the image.<br>
+The parameter <strong>caption</strong> is the caption of the image.<br>
+The parameter <strong>alt</strong> is the alt property of the image.<br></p>
+</details>
+<details>
+<summary>
+twoFigure.html
+</summary>
+<p>This shortcode shows 2 images one next to the other with the possibility to resize them.</p>
+<p>Usage example:</p>
+<pre><code>{{&lt; twoFigure src1=&quot;images/overflow_1.png&quot; width1=&quot;700&quot; src2=&quot;images/overflow_2.png&quot; width2=&quot;700&quot; &gt;}}</code></pre>
+<p>The parameter <strong>src1</strong> is the location of the right image relative to the location of the file where the shortcode has been used.<br>
+The parameter <strong>width1</strong> is the width of the right image.<br>
+The parameter <strong>height1</strong> is the height of the right image.<br>
+The parameter <strong>caption1</strong> is the caption of the right image.<br>
+The parameter <strong>alt1</strong> is the alt property of the right image.<br>
+The parameter <strong>src2</strong> is the location of the left image relative to the location of the file where the shortcode has been used.<br>
+The parameter <strong>width2</strong> is the width of the left image.<br>
+The parameter <strong>height2</strong> is the height of the left image.<br>
+The parameter <strong>caption2</strong> is the caption of the left image.<br>
+The parameter <strong>alt2</strong> is the alt property of the left image.<br></p>
+<p>With a small screen these images will be shown one on top of the other.</p>
+<p>See example of use <a href="https://rjordaney.is/lectures/basic_buffer_overflow/">here</a></p>
+</details>
+<details>
+<summary>
+twoVideos.html
+</summary>
+<p>This shortcode shows 2 YouTube videos one next to the other.</p>
+<p>Usage example:</p>
+<pre><code>
+
+
+
+<div class="columns is-centered container">    
+    <div class="column is-centered container">
+        <div>
+            <div style="position:relative;padding-top:56.25%;">
+                <iframe src="https://www.youtube.com/embed/&amp;quot;Ncv2KmhVgyU&amp;quot;?autoplay=1&mute=1" 
+                            allowfullscreen 
+                        style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+            </div>
+        </div>
+    </div>
+    <div class="column is-centered container">
+        <div>
+            <div style="position:relative;padding-top:56.25%;">
+                <iframe src="https://www.youtube.com/embed/&amp;quot;pKRzfdIJUZE&amp;quot;" 
+                            allowfullscreen
+                        style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
+</code></pre>
+<p>The parameter <strong>id1</strong> is the ID of the left video<br>
+The parameter <strong>id2</strong> is the ID of the right video<br>
+The parameter <strong>autoplay1</strong> is used to start the video on the left (the video will start on mute). Set it to “true” to activate autoplay.<br>
+The parameter <strong>autoplay2</strong> is used to start the video on the left (the video will start on mute). Set it to “true” to activate autoplay.<br>
+The parameter <strong>ratio1</strong> is used to specify the the ratio of the video on the left. It can be either “16:9” or “4:3”. The default is “16:9”.<br>
+The parameter <strong>ratio2</strong> is used to specify the the ratio of the video on the right. It can be either “16:9” or “4:3”. The default is “16:9”.<br></p>
+<p>With a small screen these videos will be shown one on top of the other.</p>
+</details>
+<details>
+<summary>
+book.html
+</summary>
+<p>Usage example:</p>
+<pre><code>{{&lt; book title=&quot;Title Awesome&quot; authors=&quot;Awesome author&quot; image=&quot;images/cover.jpg&quot; size=&quot;300x&quot;&gt;}}</code></pre>
+<p>The parameter <strong>title</strong> is the title of the book.<br>
+The parameter <strong>authors</strong> contains the authors of the book.<br>
+The parameter <strong>image</strong> is the cover of the book.<br></p>
+<p>The parameter <strong>size</strong> is used to specify the size of the book in pixel “width” x “height”.<br>
+E.g.: “300x” means 300px of width.<br>
+E.g.: “x300” means 300px of height. <br></p>
+<p>See example of use <a href="https://rjordaney.is/miscellaneous/ml_books/">here</a></p>
+</details>
+<details>
+<summary>
+exercise.html
+</summary>
+<p>Usage example:</p>
+<pre><code>{{&lt; exercise &gt;}}
+Text of the exercise.
+{{&lt; /exercise &gt;}}</code></pre>
+<p>This shortcode has no parameters.</p>
+<p>See example of use <a href="https://rjordaney.is/code_exercises/staircase_n_steps/">here</a></p>
+</details>
+<details>
+<summary>
+tabsCode.html
+</summary>
+<p>Usage example:</p>
+<pre><code>{{&lt; tabsCode 
+    file1=&quot;/content/code_exercises/staircase_n_steps/code/solution_python.md&quot; language1=&quot;python&quot; title1=&quot;Python&quot; icon1=&quot;python&quot;
+    file2=&quot;/content/code_exercises/staircase_n_steps/code/solution_c.md&quot; language1=&quot;c&quot; title2=&quot;C&quot; icon2=&quot;c&quot;
+    file3=&quot;/content/code_exercises/staircase_n_steps/code/solution_java.md&quot; language1=&quot;java&quot; title3=&quot;Java&quot; icon3=&quot;java&quot; 
+&gt;}}</code></pre>
+<p>The parameter <strong>file1</strong> is the name of the code file to be displayed in the first tab.
+The path needs to start from the <code>content</code> folder.<br>
+The parameter <strong>language1</strong> is used to highlight the syntax of the code properly.
+The parameter <strong>title1</strong> is the title of the first tab.<br>
+The parameter <strong>icon1</strong> is the icon to be shown at the right of the title, it is an optional parameter. See the partial code <code>icon.html</code> for the available icons.</p>
+<p>There are 6 tabs supported at this moment</p>
+<ul>
+<li><p>the files parameters are <strong>file1</strong>, <strong>file2</strong>, <strong>file3</strong>, <strong>file4</strong>, <strong>file5</strong>, <strong>file6</strong></p></li>
+<li><p>the titles parameters are <strong>title1</strong>, <strong>title2</strong>, <strong>title3</strong>, <strong>title4</strong>, <strong>title5</strong>, <strong>title6</strong></p></li>
+<li><p>the languages parameters are <strong>language1</strong>, <strong>language2</strong>, <strong>language3</strong>, <strong>language4</strong>, <strong>language5</strong>, <strong>language6</strong></p></li>
+<li><p>the icons parameters are <strong>icon1</strong>, <strong>icon2</strong>, <strong>icon3</strong>, <strong>icon4</strong>, <strong>icon5</strong>, <strong>icon6</strong></p></li>
+</ul>
+<p>See example of use <a href="https://rjordaney.is/code_exercises/staircase_n_steps/">here</a></p>
+</details>
+<details>
+<summary>
+tabs.html
+</summary>
+<p>Usage example:</p>
+<pre><code>{{&lt; tabs 
+    file1=&quot;/content/exercises/article1/comments/my_comments.md&quot; title1=&quot;My Ideas&quot;
+    file2=&quot;/content/exercises/article1/comments/your_comments.md&quot; title2=&quot;Your Ideas&quot; 
+    file3=&quot;/content/exercises/article1/comments/her_comments.md&quot; title3=&quot;Her Ideas&quot;  
+&gt;}}</code></pre>
+<p>The content of the files (file1, file2 …) are passed through the markdown processor, so you can use markdown in these files.</p>
+<p>The parameter <strong>file1</strong> is the name of the code file to be displayed in the first tab.
+The path needs to start from the <code>content</code> folder.<br>
+The parameter <strong>title1</strong> is the title of the first tab.<br>
+The parameter <strong>icon1</strong> is the icon to be shown at the right of the title, it is an optional parameter. See the partial code <code>icon.html</code> for the available icons.</p>
+<p>There are 6 tabs supported at this moment</p>
+<ul>
+<li><p>the files parameters are <strong>file1</strong>, <strong>file2</strong>, <strong>file3</strong>, <strong>file4</strong>, <strong>file5</strong>, <strong>file6</strong></p></li>
+<li><p>the titles parameters are <strong>title1</strong>, <strong>title2</strong>, <strong>title3</strong>, <strong>title4</strong>, <strong>title5</strong>, <strong>title6</strong></p></li>
+<li><p>the icons parameters are <strong>icon1</strong>, <strong>icon2</strong>, <strong>icon3</strong>, <strong>icon4</strong>, <strong>icon5</strong>, <strong>icon6</strong></p></li>
+</ul>
+</details>
+<details>
+<summary>
+codeInLine.html
+</summary>
+<p>Usage example:</p>
+<pre><code>{{&lt; codeInline &gt;}}sudo echo 0 &gt; /proc/sys/kernel/randomize_va_space{{&lt; /codeInline &gt;}}</code></pre>
+<p>This shortcode has 2 parameters:</p>
+<ul>
+<li><p><strong>language</strong> is used to highlight the syntax of the code properly</p></li>
+<li><p><strong>id</strong> to set a id of the html <code>code</code> element</p></li>
+</ul>
+<p>See an example of usage <a href="https://rjordaney.is/lectures/basic_buffer_overflow/">here</a></p>
+</details>
+<details>
+<summary>
+messageBlue.html, messageDark.html, messageGreen.html, messageRed.html, messageYellow.html
+</summary>
+</details>
+<details>
+<summary>
+notificationBlue.html, notificationGreen.html, notificationRed.html, notificationYellow.html
+</summary>
+</details>
+<details>
+<summary>
+siteBlue.html, siteGreen.html, siteLightgreen.html, siteRed.html, siteYellow.html
+</summary>
+<p>Usage example:</p>
+<pre><code>{{&lt; siteLightgreen &quot;Web&quot; &quot;https://www.example.com&quot; &gt;}}
+&lt;p&gt;Description of the website.&lt;/p&gt;
+{{&lt; /siteLightgreen &gt;}}</code></pre>
+<p>The <strong>first parameter</strong> will appear in the right coloured part of the shortcode.<br>
+The <strong>second parameter</strong> will appear in the middle part of the shortcode.<br></p>
+<p>See example of usage <a href="https://rjordaney.is/miscellaneous/ctf_resources/">here</a></p>
+</details>
+</div>
+<div id="customization-options-for-a-regular-page" class="section level2">
+<h2>Customization options for a regular page</h2>
+<p>These are the options that you can define is the front matter of a regular page:</p>
+<pre><code>---
+title: &quot;My Awesome Title&quot;
+date: 2019-06-03T21:51:13+01:00
+draft: false
+hideLastModified: true
+summaryImage: &quot;images/system.jpg&quot; 
+keepImageRatio: true
+tags: [&quot;Tag1&quot;, &quot;tag2&quot;, &quot;tag 3&quot;]
+summary: &quot;This is a custom summary for my article&quot;
+showInMenu: true
+---</code></pre>
+<ul>
+<li><p><code>summaryImage</code>: it is used to specify the image to be used in the summary</p></li>
+<li><p><code>keepImageRatio</code>: it is used to force the aspect ratio of the image to be kept. The default value is <strong>false</strong>.</p></li>
+<li><p><code>summary</code>: it is used to specify the summary of an article instead of taking it from the article itself.</p></li>
+<li><p><code>hideLastModified</code>: it is used to hide the the timestamp added at the end of the article.</p></li>
+<li><p><code>showInMenu</code>: it is used to show the article in the top right menu.</p></li>
+<li><p><code>tags</code>: it is the list of tags for the article; they will be used to build the left sidebar.</p></li>
+</ul>
+<p>To avoid path problems when specifying the <code>summaryImage</code>, it is recommended to define a regular page as a leaf bundle. The example above will result in:</p>
+<pre><code>* my_awesome_title (folder)
+   * index.md (file)
+   * images (folder)
+      * system.jpg (file)</code></pre>
+</div>
+<div id="multilanguage-support" class="section level2">
+<h2>Multilanguage support</h2>
+<p>To chose the default language you need to set the <code>DefaultContentLanguage</code> setting in the <code>config.yaml</code> file.
+(You can also have multiple languages at the same time, see <code>exampleSite/config.yaml</code> for an example.)</p>
+<p>The language supported are:</p>
+<ul>
+<li><p>English</p></li>
+<li><p>Spanish</p></li>
+<li><p>French</p></li>
+<li><p>Italian</p></li>
+<li><p>Russian</p></li>
+<li><p>Chinese</p></li>
+<li><p>Polish</p></li>
+<li><p>German</p></li>
+</ul>
+<p>If you want to add a missing language please submit a feature request.</p>
+</div>
+<div id="list-of-modifications-from-the-original-theme" class="section level2">
+<h2>List of modifications from the original theme</h2>
+<ul>
+<li><p>The ReFresh theme was transformed from <em>single page</em> template to <em>multipage</em>.</p></li>
+<li><p>Added multilanguage support.</p></li>
+<li><p>The left side menu now contains page tags along with theirs post counter.</p></li>
+<li><p>The <em>list</em> and <em>terms</em> types of pages contain a list of the post summaries.</p></li>
+<li><p>The images used to build the summaries can be resized to allow better usage of the bandwidth.</p></li>
+<li><p>The js and css files can be minified (with a configurable option on the <code>config.yaml</code>).</p></li>
+<li><p>The menu is automatically built following the structure of the <code>content</code> folder. Two levels are allowed at the moment.</p></li>
+<li><p>The <code>navbar-burger</code> used in the original theme’s menu is removed (it was displayed when the page was resized).</p></li>
+<li><p>The <code>.sass</code> files are now processed with <code>resources.ExecuteAsTemplate</code> so that it is possible to use variables from the <code>config.yaml</code>.</p></li>
+<li><p>Options in the <code>config.yaml</code> are added to configure the font-family for the navbar, sidebar and content of the a page.</p></li>
+<li><p><a href="https://bulma.io/">Bulma</a> (the css framework the theme is based on) is now updated to version 0.7.5 because in the new version the class <em>content</em> has a separate style to allow modification that will impact only the contents of the posts.</p></li>
+<li><p><a href="https://highlightjs.org/">highlight.js</a> was added to better highlight the code sections of the posts. I chose the style <strong>monokai-sublime</strong>.</p></li>
+<li><p><a href="https://github.com/wcoder/highlightjs-line-numbers.js/">highlightjs-line-number.js</a> was added to have the line number at the beginning of each line of code in a code sections of a post.</p></li>
+<li><p>A minimal version of <a href="https://www.mathjax.org/">MathJax</a> was added to allow LaTeX style mathematical expressions to be placed in the site.</p></li>
+<li><p>Several other options are added to personalise the content of a post.</p></li>
+<li><p>A shortcode is added to resize the images and save bandwidth in a post content.</p></li>
+<li><p>A shortcode is added to show multiple tabs.</p></li>
+<li><p>Four shortcodes are added to show code: inline, in page, in page wide, in tabs.</p></li>
+<li><p>The loaders images are now processed with <code>resources.ExecuteAsTemplate</code> so that they take the main colour of the theme (defined in <code>config.yaml</code>)</p></li>
+<li><p>The <em>favicon</em> is processed with <code>resources.ExecuteAsTemplate</code> to follow the main colour of the page.</p></li>
+<li><p>Added Open Graph meta tags to each post for easy-sharing on social media sites.</p></li>
+<li><p>All the js and css files are loaded locally, i.e., not loaded from third party sites.</p></li>
+</ul>
+</div>
+</div>
+
+        </section>
+      </div>
+    </div>
+  </div>  
+  <div class="container">
+    <div class="columns">
+      <div class="column has-text-right is-family-monospace is-centered-tablet-portrait">
+        Última modificação:&nbsp;1 January 0001</div>
+    </div>
+  </div></section>
+<footer class="footer footer-dark">
+  <div class="container">
+    <div class="columns">
+      <div class="column">
+        <img src="/footer.svg" alt="">
+        
+      </div>
+      
+    <div class="column">
+        <div class="footer-column">
+          <div class="footer-header">
+              <h3>Local na rede Internet</h3>
+          </div>
+          <ul class="link-list"><li></li>
+            <li><a href="/tags/">
+                <span class="icon"><i class="fa fa-tag"></i></span> 
+                Todas as Tags
+              </a></li>
+          </ul>
+        </div>
+      </div>
+    
+      
+      <div class="column">
+        <div class="footer-column">
+          <div class="footer-header">
+              <h3>Contatos</h3>
+          </div>
+          <ul class="link-list">
+            
+            <li>
+              <a href="https://www.linkedin.com/https://www.linkedin.com/in/andreson-azevedo/" target="_blank">
+                <span class="icon"><i class="fa fa-linkedin"></i></span>
+                
+                  andreson-azevedo/
+                
+              </a>
+            </li>
+            
+                         
+            
+            <li>
+              <a href="mailto:andresondez@hotmail.com" target="_blank">
+                <span class="icon"><i class="fa fa-envelope"></i></span>
+                
+                  andresondez@hotmail.com
+                
+              </a>
+            </li>
+            
+                   
+                   
+                   
+          </ul>
+        </div>
+      </div>
+      
+
+      
+      <div class="column">
+        <div class="footer-column">
+          <div class="footer-header">
+              <h3>Direito Autoral</h3>
+          </div>
+          <ul class="link-list">
+            <li>
+              <a>
+                <span class="icon"><i class="fa fa-copyright"></i></span>
+                Face a Face com a Estatística - 2021
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+
+    </div>
+  </div>
+</footer>
+    <div id="backtotop"><a href="#"></a></div><div class="sidebar scroll">
+  <div class="sidebar-header"><img src="/sidebar.svg" alt="">
+    
+    <a class="sidebar-close" href="javascript:void(0);">
+      <i data-feather="x"></i>
+    </a>
+  </div>
+  <div class="inner">
+    <ul class="sidebar-menu">
+      <li class="no-children"><a href="/tags/"><div class="columns">
+              <table width="100%">  
+                <tr>
+                  <td class="">
+                    <span class="icon"><i class="fa fa-cubes"></i></span>
+                    Todas as Tags
+                  </td>
+                  <td class="has-text-right" >
+                      
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </a>
+      <li class="no-children">
+          <a href="/tags/teste">
+            <div class="columns">
+              
+              <table width="100%">  
+                  <tr>
+                    <td class=""><span class="icon"><i class="fa fa-cube"></i></span>teste</td>
+                    <td class="has-text-right" >
+                        <div class="tag-number">1</div>
+                      
+                    </td>
+                    
+                  </tr>
+              </table>
+              
+            </div>
+          </a>
+      </li></ul>
+  </div>
+</div>
+<script src="/js/jquery-2.2.4.893e90f6230962e42231635df650f20544ad22affc3ee396df768eaa6bc5a6a2.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="></script>
+  <script src="/js/feather.4.22.0.1ab07abeb9975f283f6b5f29451981be680fbf77ea778f991d457511d210476a.js" integrity="sha256-GrB6vrmXXyg/a18pRRmBvmgPv3fqd4&#43;ZHUV1EdIQR2o="></script>
+  <script src="/js/modernizr-3.6.0.e013a1e54e3c19d83537ba42b900d34451e5e4b2e789be27a02ac9b152edb741.js" integrity="sha256-4BOh5U48Gdg1N7pCuQDTRFHl5LLnib4noCrJsVLtt0E="></script>
+  <script src="/js/refresh.62c1a9b7d85bcf4d944cd585a01dfa8fb15112a7d2cf9fb819db20493bfe7484.js" integrity="sha256-YsGpt9hbz02UTNWFoB36j7FREqfSz5&#43;4GdsgSTv&#43;dIQ="></script><script>
+  window.MathJax = {
+    loader: {
+      load: ['core', 'input/tex-base', 'output/chtml'],  
+      source: {
+        'core': '\/js\/mathjax\/core.d48fedf25c74c54fa6bf79646de92b02155872bdc4f5f7d0bbfc662523d8b4f5.js',
+        'input/tex-base': '\/js\/mathjax\/tex-base.1b68b8741dfc54e8f7222f88bea8ffcfc57ac54b2a2d8f4edf6800aa44d49441.js',
+        'output/chtml': '\/js\/mathjax\/chtml.926cd166e0f8c1f8a566a718d60c9c58a2b7142b156d30d5f02cec7c3b0ad60a.js',
+        'output/chtml/fonts/tex': '\/js\/mathjax\/tex_out.b8b2bb939c0dae84bf1390bfe6d32af13e83f647cdac01d544d2a7a517477e9d.js'
+      },
+    },
+    chtml: {
+      fontURL: '/fonts' 
+    },
+  };
+</script><script src="/js/mathjax/startup.234a2513e6bdbc1eee06ca19abceca30fe4034e82afb373c08274c1ba2feb1a6.js" integrity="sha256-I0olE&#43;a9vB7uBsoZq87KMP5ANOgq&#43;zc8CCdMG6L&#43;saY="></script>
+  <script src="/js/highlight.9.18.1.b1c58829c55afcc1f568022af4b08ed8976da404d2990b7535bd8e19c0e3310c.js" integrity="sha256-scWIKcVa/MH1aAIq9LCO2JdtpATSmQt1Nb2OGcDjMQw="></script>
+  <script src="/js/highlightjs-line-numbers.2.7.0.min.ddfe282e07b7ec1ed069c23f92c7c8216ddb3f1879c4e962d37fd52adbd15a05.js" integrity="sha256-3f4oLge37B7QacI/ksfIIW3bPxh5xOli03/VKtvRWgU="></script><script>
+  hljs.initHighlightingOnLoad();
+  hljs.initLineNumbersOnLoad();
+  document.addEventListener('DOMContentLoaded', (event) => {
+    document.querySelectorAll('.codeinline').forEach((block) => {
+      hljs.highlightBlock(block);
+    });
+  });
+</script>
+
+</body>
+</html>
